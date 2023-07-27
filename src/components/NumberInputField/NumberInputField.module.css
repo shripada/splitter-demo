@@ -1,0 +1,74 @@
+/* To hide the up and down arrows in the number input */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* If you also want to remove the default number input styling (up/down arrows) */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.custom-input {
+  text-align: right;
+  width: 524px;
+  height: 64px;
+  font-family: var(--primary-font-family);
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--input-text-color);
+  background-color: var(--input-background-color);
+  border: none;
+  outline: none;
+  padding-right: 20px;
+  border-radius: 6px;
+}
+
+.custom-input:focus {
+  border: solid 2px var(--input-border-color-focussed);
+}
+
+.custom-input:focus {
+  border: solid 2px var(--input-border-color-focussed);
+}
+.number-input-field-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 524px;
+}
+
+.icon-container {
+  margin-top: 12px;
+  position: relative;
+}
+
+.icon-wrapper {
+  position: absolute;
+  display: flex;
+  height: 64px;
+  align-items: center;
+  top: 0;
+  left: 20px;
+}
+
+label {
+  font-size: 1.25rem;
+  color: var(--label-color);
+}
+
+.label-container {
+  font-family: var(--primary-font-family);
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+}
+
+.number-input-field-container.error .custom-input:focus {
+  border: solid 2px var(--error-color);
+}
+
+.error-message {
+  color: var(--error-color);
+  font-size: 1.25rem;
+}
