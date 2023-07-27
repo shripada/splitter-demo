@@ -12,7 +12,7 @@
     "create-component": "plop",
     "format": "prettier --ignore-path .gitignore --write src/components/**/*.{ts,tsx,css}",
     "prepare": "husky install",
-    "lint-staged": "lint-stage"
+    "lint-staged": "lint-staged"
   },
   "dependencies": {
     "@types/node": "20.4.4",
