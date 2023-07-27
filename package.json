@@ -11,7 +11,8 @@
     "build-storybook": "storybook build",
     "create-component": "plop",
     "format": "prettier --ignore-path .gitignore --write src/components/**/*.{ts,tsx,css}",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint-staged": "lint-stage"
   },
   "dependencies": {
     "@types/node": "20.4.4",
